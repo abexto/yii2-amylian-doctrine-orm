@@ -3,6 +3,6 @@
     "type": "yii2-extension",
     "minimum-stability": "stable",
     "require": {
-        "doctrine/orm": "2.*"
+        "doctrine/orm": "~2.6"
     }
 }
