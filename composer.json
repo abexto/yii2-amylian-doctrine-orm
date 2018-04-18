@@ -1,8 +1,8 @@
 {
     "name": "amylian/yii2-amylian-doctrine-orm",
     "type": "yii2-extension",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
-        "doctrine/orm": "2.*-stable"
+        "doctrine/orm": "2.*"
     }
 }
