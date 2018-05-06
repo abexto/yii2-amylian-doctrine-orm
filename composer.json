@@ -3,7 +3,7 @@
   "type": "yii2-extension",
   "minimum-stability": "stable",
   "require": {
-    "doctrine/orm": "@stable"
+    "doctrine/orm": "^2.5@stable"
   },
   "autoload": {
     "psr-4": {
