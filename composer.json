@@ -1,13 +1,16 @@
 {
-  "name": "amylian/yii2-amylian-doctrine-orm",
-  "type": "yii2-extension",
-  "minimum-stability": "stable",
-  "require": {
-    "doctrine/orm": "^2.5@stable"
-  },
-  "autoload": {
-    "psr-4": {
-      "amylian\\yii\\doctrine\\orm\\": "src/"
-    }  
-  }
+    "name": "amylian/yii2-amylian-doctrine-orm",
+    "type": "yii2-extension",
+    "description": "ATTENTION EXPERIMENTAL! Doctrine/ORM Components for Yii2",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "require": {
+        "doctrine/orm": "^2.5@stable"
+    },
+    "autoload": {
+        "psr-4": {
+            "amylian\\yii\\doctrine\\orm\\": "src/"
+        }  
+    }
 }

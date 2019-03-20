@@ -13,5 +13,4 @@ namespace amylian\yii\doctrine\orm;
  */
 class Doctrine extends \amylian\yii\doctrine\dbal\Doctrine
 {
-    //put your code here
 }
