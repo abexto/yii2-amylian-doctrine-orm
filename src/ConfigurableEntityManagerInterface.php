@@ -35,15 +35,11 @@
 namespace amylian\yii\doctrine\orm;
 
 /**
- * Constants used for Yii ORM package
+ * Description of ConfigurableEntityManagerInterface
  *
  * @author andreas
  */
-class Consts extends \amylian\yii\doctrine\dbal\Consts
+interface ConfigurableEntityManagerInterface extends \Doctrine\ORM\EntityManagerInterface, \yii\base\Configurable
 {
-    const DEFAULT_CONFIGURATION = Configuration::class;
-    const DEFAULT_CONFIGURATION_CLASS = Configuration::class;
-    
-    const DEFAULT_ENTITY_MANAGER = EntityManager::class;
-    const DEFAULT_ENTITY_MANAGER_CONST = EntityManager::class;
+    //put your code here
 }
