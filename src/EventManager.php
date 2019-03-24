@@ -35,11 +35,11 @@
 namespace amylian\yii\doctrine\orm;
 
 /**
- * Description of ConfigurableEntityManagerInterface
+ * Description of EventManager
  *
  * @author andreas
  */
-interface ConfigurableEntityManagerInterface extends \Doctrine\ORM\EntityManagerInterface, \yii\base\Configurable
+class EventManager
 {
     //put your code here
 }

@@ -48,27 +48,8 @@ class EntityManager extends \Doctrine\ORM\EntityManager implements ConfigurableE
 {
     use \amylian\yii\doctrine\base\common\ConfigurableDoctrineTrait;
 
-    public function __construct(array $configArray = [])
+    public function __construct(ConnectionProviderInterface)
     {
-        $configArray = $this->mergeDefaultConfigurationArray($configArray);
-
-        $configuration = \yii\di\Instance::ensure($configArray['configuration'], \Doctrine\ORM\Configuration::class);
-        unset($configArray['configuration']);
-        
-        $eventManager = \yii\di\Instance::ensure($configArray['eventManager'], \Doctrine\Common\EventManager::class);
-        unset($configArray['eventManager']);
-        
-        $connection = \yii\di\Instance::ensure($configArray['connection'], \amylian\yii\doctrine\dbal\Connection::class);
-        unset($configArray['connection']);
-
-
-        parent::__construct(
-                $connection instanceof \amylian\yii\doctrine\dbal\ConfigurableConnectionInterface ?
-                        $connection->getWrappedConnection() : $connection,
-                $configuration,
-                $eventManager);
-        
-       $this->assignConfigurationAttributesFromArray($configArray);
     }
     
     public function getDefaultConfigurationArray(): array

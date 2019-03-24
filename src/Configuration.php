@@ -20,20 +20,10 @@ class Configuration extends \Doctrine\ORM\Configuration implements
         \amylian\yii\doctrine\dbal\ConfigurationTrait::getDefaultConfigurationArray as getDefaultDbalConfigurationArray;
     }
 
-    public function __construct(array $configArray = [])
+    public function __construct()
     {
-        $this->assignConfigurationAttributesFromArray($this->mergeDefaultConfigurationArray($configArray));
-    }
-
-    public function getDefaultConfigurationArray(): array
-    {
-        return \yii\helpers\ArrayHelper::merge($this->getDefaultDbalConfigurationArray(),
-                        [
-                            'proxyDir' => '@runtime/amylian/doctrine/proxies',
-                            'proxyNamespace' => '\\runtime\\amylian\\doctrine\\proxy',
-                            'metadataCacheImpl' => \yii\di\Instance::of(Consts::DEFAULT_CACHE),
-                            'queryCacheImpl' => \yii\di\Instance::of(Consts::DEFAULT_CACHE)
-        ]);
+        $this->setProxyDir('@runtime/doctrine/proxyies');
+        $this->setProxyNamespace('\\runtime\\doctrine\\proxies');
     }
 
     /**
