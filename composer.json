@@ -6,7 +6,7 @@
     "prefer-stable": true,
     "minimum-stability": "stable",
     "require": {
-        "doctrine/orm": "^2.5@stable"
+        "amylian/amylian-doctrine-orm": "dev-master@dev"
     },
     "autoload": {
         "psr-4": {
