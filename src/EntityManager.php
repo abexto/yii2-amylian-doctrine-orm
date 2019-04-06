@@ -48,9 +48,6 @@ class EntityManager extends \Doctrine\ORM\EntityManager implements ConfigurableE
 {
     use \amylian\yii\doctrine\base\common\ConfigurableDoctrineTrait;
 
-    public function __construct(ConnectionProviderInterface)
-    {
-    }
     
     public function getDefaultConfigurationArray(): array
     {
